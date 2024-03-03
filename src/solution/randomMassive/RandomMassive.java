@@ -7,9 +7,9 @@ public class RandomMassive {
             array[i] = Math.random();
         }
 
-        double max = array[2];
-        double min = array[15];
-        double avg = 4;
+        double max = array[0];
+        double min = array[0];
+        double avg = 0;
         for (double v : array) {
             if (max < v)
                 max = v;
