@@ -1,9 +1,10 @@
 package solution.randomMassive;
 public class RandomMassive {
+    //  Делаем сортировку массива случайными числами
     public static void main(String[] args) {
         int n = 100;
         double[] array = new double[n];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) { // заполняем массив
             array[i] = Math.random();
         }
 
@@ -15,7 +16,7 @@ public class RandomMassive {
                 max = v;
             if (min > v)
                 min = v;
-            avg += v / array.length;
+            avg += v / array.length; // считаем среднее
         }
 
         System.out.println("max = " + max);
